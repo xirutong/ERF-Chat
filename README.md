@@ -35,8 +35,5 @@ You may need to train again if documents are replaced. Please find relevant part
 
 For support, questions, or feedback regarding the ErfChat Crew or crewAI.
 - Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
 
 Let's create wonders together with the power and simplicity of crewAI.
