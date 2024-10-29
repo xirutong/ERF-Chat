@@ -33,7 +33,5 @@ You may need to train again if documents are replaced. Please find relevant part
 
 ## Support
 
-For support, questions, or feedback regarding the ErfChat Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-
-Let's create wonders together with the power and simplicity of crewAI.
+For support, questions, or feedback regarding crewAI.
+- Visit the website [documentation](https://docs.crewai.com)
