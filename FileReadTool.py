@@ -3,8 +3,10 @@ from pydantic.v1 import BaseModel, Field
 from crewai_tools import BaseTool
 from typing import Type
 
+
 class FileReadToolResult(BaseModel):
     file_content: str
+
 
 class FileReadToolInput(BaseModel):
     """Input for FileReadTool."""
@@ -16,8 +18,8 @@ class FileReadTool(BaseTool):
     description: str = "Extract the content from the given document."
     args_schema: Type[BaseModel] = FileReadToolInput
 
-    def _run(self, path:str) -> FileReadToolResult:
-        
+    def _run(self, path: str) -> FileReadToolResult:
+
         try:
             doc = Document(path)
             for paragraph in doc.paragraphs:
@@ -25,6 +27,4 @@ class FileReadTool(BaseTool):
         except Exception as e:
             print(f"Error reading the .docx file: {e}")
 
-            
         return content
-    

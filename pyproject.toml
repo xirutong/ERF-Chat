@@ -1,0 +1,20 @@
+[project]
+name = "erf_chat"
+version = "0.1.0"
+description = "erf-chat using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.2,<1.0.0"
+]
+
+[project.scripts]
+erf_chat = "erf_chat.main:run"
+run_crew = "erf_chat.main:run"
+train = "erf_chat.main:train"
+replay = "erf_chat.main:replay"
+test = "erf_chat.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
