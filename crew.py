@@ -103,6 +103,7 @@ def run():
             f"Make sure to use the specialized tool to find activities that best fit their interests and background. "
             f"Strive to provide a complete and accurate recommended activities."
             f"The description should be filled with the summarization of the contents."
+            f"Don't forget to fill the 'contents' part."
         ),
         expected_output=("""
                 output = [
@@ -153,3 +154,6 @@ def run():
     result = crew.kickoff()
 
     print(result)
+
+if __name__ == "__main__":
+    run()

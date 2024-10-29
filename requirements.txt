@@ -1,0 +1,10 @@
+crewai[tools]
+langchain_openai
+python-dotenv
+python-docx
+pydantic
+scikit-learn
+numpy
+joblib
+docx2python
+sentence-transformers
