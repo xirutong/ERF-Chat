@@ -1,10 +1,10 @@
 import os
-#from docx import Document
+from docx import Document
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
-from joblib import load
+from joblib import dump, load
 from pydantic.v1 import BaseModel, Field
 from crewai_tools import BaseTool
 from typing import List, Type
@@ -31,6 +31,7 @@ class TFIDFActivityRecommendationTool(BaseTool):
     args_schema: Type[BaseModel] = TFIDFActivityRecommendationToolInput
 
     def _run(self, background:str) -> List[TFIDFActivityRecommendationResult]:
+        
         def top_documents(background, vectorizer, tfidf_matrix, filenames, threshold=0.01):
             query_vec = vectorizer.transform([background])
             cosine_similarities = cosine_similarity(query_vec, tfidf_matrix).flatten()
@@ -45,6 +46,7 @@ class TFIDFActivityRecommendationTool(BaseTool):
         top = top_documents(background, vectorizer, tfidf_matrix, filenames)
 
         # extract each part
+        #brief_descriptions = {}
         contents = {}
         topics = {}
         folder_path = 'synthetic-documents'
@@ -56,11 +58,17 @@ class TFIDFActivityRecommendationTool(BaseTool):
                 with docx2python(file_path) as docx_content:
                     content = docx_content.text
                     contents[filename] = content
+                
+                """match = re.search(r'Brief Description:(.*?)(?=Highlights:)', content, re.DOTALL)
+                if match:
+                    brief_description = match.group(1).strip()
+                    brief_descriptions[filename] = brief_description"""
                     
                 match = re.search(r'Title:(.*?)(?=Topic Categorization:)', content, re.DOTALL)
                 if match:
                     topic = match.group(1).strip()
                     topics[filename] = topic
+            
             
         output = []
         
@@ -75,6 +83,7 @@ class TFIDFActivityRecommendationTool(BaseTool):
                 topic=topics[filename],
                 cont=contents[filename]
             ))
-
+                
+            
         return output
     
