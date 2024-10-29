@@ -1,0 +1,11 @@
+# prompt → target document
+I'm looking for activities related to the application of robotics to flying machines.	→ exhibition7 
+I'm interested in the AI applied in robotics.						→ workshop4
+I want to know about generative artificial intelligence in robotics.			→ workshop4
+I'm a professor researching the foundational theories in robotics.			→ workshop7
+I'm a student majoring in mechanical engineering.					→ exhibition4
+I'm a software developer, please recommend something.					→ exhibition5
+working in a hospital, which activities do you recommend?				→ workshop1
+Please show me something about cobots.							→ workshop6
+marketing & strategy specialist								→ workshop10
+math teacher in high school, please give me some recommendations			→ workshop16

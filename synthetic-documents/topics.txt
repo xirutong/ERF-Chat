@@ -1,0 +1,48 @@
+-- Robotics in Key Application Areas
+Healthcare
+Agri-Food
+Inspection and Maintenance
+Agile Production / Industrial
+Space
+Construction
+
+
+-- Next-Gen Robotics Technologies
+Robotics and AI
+Mechanical and mechatronic aspects
+Individual technologies / components (navigation, perception, ...)
+Systems and Software
+Communication, Collaborative Robots and cloud robotics
+Scientific basis of robotics
+Cybersecurity
+
+
+-- Robotic technology in specific operation environments
+Marine / underwater
+Aerial
+Harsh Environments / nuclear / mining
+Space
+
+
+-- Robotics Business & Innovation
+End user challenges
+Market overview (discussion of stats and trends)
+Actual networking / matchmaking session
+
+
+-- Regulatory and Legal Landscape & Standardization
+AI Act and Robotics
+Regulation affecting robotics solutions
+Standardisation
+
+
+-- Environmental Sustainability Aspects
+Robots supporting sustainable production or services
+Sustainable robotics systems
+robotics technology for cyclic economy
+
+
+-- Societal and Ethical Issues, Education
+Education
+Societal aspects
+Ethical aspects
