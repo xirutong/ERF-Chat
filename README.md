@@ -12,7 +12,7 @@ pip install -r requirements.txt
 ```
 ### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
+**Add your `OPENAI_API_KEY` and `SERPER_API_KEY` into the `.env` file**
 
 
 ## Running the Project
