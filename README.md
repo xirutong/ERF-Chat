@@ -1,4 +1,4 @@
-# ErfChat Crew
+# ERF-Chat Crew
 
 Welcome to the ErfChat Crew project, powered by [crewAI](https://crewai.com).
 ## Installation
